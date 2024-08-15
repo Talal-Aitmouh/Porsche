@@ -4,6 +4,7 @@ body {
   font-family: 'Helvetica Neue', Arial, sans-serif;
   background-color: #f5f5f5;
   background-image: url(./assets/Sans.png);
+  background-size: cover;
   color: #000;
 }
 
@@ -13,7 +14,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 3px 40px;
   background-color: #fff;
 }
 
@@ -47,10 +48,16 @@ body {
 }
 
 .hero-section {
+  display: flex;
+  justify-content: center;
   position: relative;
   text-align: center;
   padding: 40px 20px;
 }
+.hero-section img{
+  width: 70%;
+
+} 
 
 .model-name {
   font-size: 120px;
@@ -104,15 +111,27 @@ body {
 
 .gallery-section {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: 10px;
-  padding: 20px;
-  border-top: 1px solid #ddd;
+  
+  
+  z-index: 2;
+  position: absolute;
+  top: 10%;
+  left: 5%;
 }
 
 .gallery-image {
-  width: 200px;
-  height: 150px;
-  object-fit: cover;
+  width: 150px;
+  height: 100px;
   border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.4s ease, filter 0.4s ease, box-shadow 0.4s ease;
+
+}
+.gallery-image:hover {
+  transform: scale(1.1); /* Zoom in on hover */
+  filter: brightness(1.2); /* Slightly brighten the image */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
 }

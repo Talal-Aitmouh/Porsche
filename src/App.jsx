@@ -1,5 +1,9 @@
 import React from 'react';
 import imageSrc from './assets/logo.png';
+import Porsche from './assets/porsche1.png';
+import back from './assets/back.jpeg';
+import inter from './assets/inter.jpg';
+import road from './assets/road.jpg';
 import './App.css';
 
 const CarShowcase = () => {
@@ -20,8 +24,12 @@ const CarShowcase = () => {
       </header>
 
       <div className="hero-section">
-        <h1 className="model-name">TAYCAN</h1>
-        <img src="https://via.placeholder.com/1200x600" alt="Porsche Taycan" className="car-image" />
+        <div className="gallery-section">
+          <img src={road} alt="Gallery Image 1" className="gallery-image" />
+          <img src={inter} alt="Gallery Image 2" className="gallery-image" />
+          <img src={back} alt="Gallery Image 3" className="gallery-image" />
+        </div>
+        <img src={Porsche} alt="Porsche Taycan" className="car-image" />
       </div>
 
       <div className="details-section">
@@ -45,11 +53,7 @@ const CarShowcase = () => {
         </div>
       </div>
 
-      <div className="gallery-section">
-        <img src="https://via.placeholder.com/200x150" alt="Gallery Image 1" className="gallery-image" />
-        <img src="https://via.placeholder.com/200x150" alt="Gallery Image 2" className="gallery-image" />
-        <img src="https://via.placeholder.com/200x150" alt="Gallery Image 3" className="gallery-image" />
-      </div>
+
     </div>
   );
 };
