@@ -1,0 +1,118 @@
+/* CarShowcase.css */
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f5f5f5;
+  background-image: url(./assets/Sans.png);
+  color: #000;
+}
+
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.logo {
+  width: 60px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.nav li {
+  cursor: pointer;
+  color: #555;
+}
+
+.test-drive-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero-section {
+  position: relative;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.model-name {
+  font-size: 120px;
+  font-weight: bold;
+  color: #eee;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  margin: 0;
+}
+
+.car-image {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.details-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.car-info h2, .car-info h3 {
+  margin: 0;
+}
+
+.performance-info {
+  display: flex;
+  gap: 50px;
+}
+
+.performance-item {
+  text-align: center;
+}
+
+.performance-item .label {
+  display: block;
+  font-size: 14px;
+  color: #555;
+}
+
+.performance-item .value {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.gallery-section {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.gallery-image {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
