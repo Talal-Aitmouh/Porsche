@@ -14,8 +14,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3px 40px;
+  padding: 0px 40px;
   background-color: #fff;
+  margin-bottom: 20px;
 }
 
 .logo {
@@ -56,6 +57,7 @@ body {
 }
 .hero-section img{
   width: 70%;
+  
 
 } 
 
@@ -134,4 +136,46 @@ body {
   transform: scale(1.1); /* Zoom in on hover */
   filter: brightness(1.2); /* Slightly brighten the image */
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+}
+
+
+/* Mobile-Specific Styles */
+@media (max-width: 600px) {
+  .header {
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .hero-section img {
+    max-width: 250px; /* Even smaller image for small screens */
+  }
+
+  .model-name {
+    font-size: 28px; /* Adjusted for small screens */
+  }
+
+  .details-section {
+    padding: 10px;
+  }
+
+  .performance-info {
+    gap: 10px;
+  }
+
+  .gallery-section {
+    padding: 10px;
+    gap: 5px;
+  }
+
+  .gallery-image {
+    width: 80px;
+    height: 50px; /* Smaller gallery images */
+  }
 }
