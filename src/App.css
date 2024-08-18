@@ -133,7 +133,7 @@ body {
 
 }
 .gallery-image:hover {
-  transform: scale(1.1); /* Zoom in on hover */
+  transform: scale(1.5); /* Zoom in on hover */
   filter: brightness(1.2); /* Slightly brighten the image */
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
 }
