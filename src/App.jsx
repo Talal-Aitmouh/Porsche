@@ -32,15 +32,15 @@ const Counter = ({ targetNumber }) => {
   return <span className="value">{count}</span>;
 };
 
-// Add prop types validation
+
 Counter.propTypes = {
-  targetNumber: PropTypes.number.isRequired, // Ensure targetNumber is a number and is required
+  targetNumber: PropTypes.number.isRequired, 
 };
 
 
 
 const CarShowcase = () => {
-  // Variants for the animations
+
   const containerVariants = {
     hidden: { opacity: 0, y: -50 },
     visible: {
